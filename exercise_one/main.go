@@ -5,7 +5,7 @@
 	Escreva uma função que retorne a avaliação desse aluno (o esqueleto já vou deixar escrito) abaixo
 	Calcule a média do aluno e verifique:
   - Se a nota do aluno for menor que 5, retorne: NOME_DO_ALUNO: REPROVADO
-	- Se a nota do aluno estiver entre e 9, retorne: NOME_DO_ALUNO: APROVADO
+	- Se a nota do aluno estiver entre 5 e 9, retorne: NOME_DO_ALUNO: APROVADO
 	- Se a nota do aluno estiver acima de 9, retorne: NOME_DO_ALUNO: PARABÉNS
 
 	Dica: Para pegar os inputs de nota do usuário, use a função fmt.Scan()
