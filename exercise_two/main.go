@@ -7,6 +7,7 @@
 	Dica: Para pegar os inputs de nota do usuário, use a função fmt.Scan()
 	- Para entender o fmt.Scan(): https://acervolima.com/funcao-fmt-scan-em-golang-com-exemplos/
 	- Para entender como criar e escrever funções: https://go.dev/tour/basics/4
+	- Para entender como criar e percorrer arrays: https://dev.to/linivecristine/arrays-em-golang-3cf1
 
 */
 
