@@ -27,5 +27,16 @@ func lowestNumber(number1, number2, number3, number4, number5 int) int {
 	// DICA: use um array de 5 posições para percorrer os valores enviados pelos parâmetros
 
 	// Retorne o menor número encontrado
-	return 0
+
+	lowest := number1
+	numbers := [5]int{number1, number2, number3, number4, number5}
+	for i := 1; i < len(numbers); i++ {
+		if lowest <= numbers[i] {
+			continue
+		}
+
+		lowest = numbers[i]
+	}
+
+	return lowest
 }

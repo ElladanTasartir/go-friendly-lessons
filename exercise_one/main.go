@@ -17,6 +17,8 @@
 
 package main
 
+import "fmt"
+
 func main() {
 	// Crie suas variáveis abaixo:
 
@@ -31,6 +33,15 @@ func reviewStudents(name string, grade1, grade2, grade3, grade4 float64) string 
 	// Implemente o código responsável por calcular a média do aluno abaixo:
 
 	// Verifique a média do aluno e retorne a string esperada na descrição do exercício
+	average := (grade1 + grade2 + grade3 + grade4) / 4
 
-	return ""
+	if average >= 9 {
+		return fmt.Sprintf("%s: PARABÉNS", name)
+	}
+
+	if average >= 5 {
+		return fmt.Sprintf("%s: APROVADO", name)
+	}
+
+	return fmt.Sprintf("%s: REPROVADO", name)
 }
