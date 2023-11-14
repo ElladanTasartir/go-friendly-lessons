@@ -13,20 +13,55 @@
 
 package main
 
+import "fmt"
+
 func main() {
 	// Declare as variáveis aqui
 
+	var num1 int
+	var num2 int
+	var num3 int
+	var num4 int
+	var num5 int
+
 	// Colete os valores do usuário aqui
+
+	fmt.Println("digite os números")
+
+	fmt.Scan(&num1)
+	fmt.Scan(&num2)
+	fmt.Scan(&num3)
+	fmt.Scan(&num4)
+	fmt.Scan(&num5)
 
 	// Chame a função lowestNumber aqui
 
+	result := lowestNumber(num1, num2, num3, num4, num5)
+
 	// Print o resultado da função aqui
+
+	fmt.Println(result)
+
 }
 
 func lowestNumber(number1, number2, number3, number4, number5 int) int {
 	// Verifique qual dos valores é o menor utilizando um laço de repetição e if
+
+	numArray := [5]int{number1, number2, number3, number4, number5}
+	fmt.Println(numArray, len(numArray))
+
+	lowNum := numArray[0]
+
+	for i := 0; i < len(numArray); i++ {
+		if lowNum > numArray[i] {
+			lowNum = numArray[i]
+		}
+
+	}
+
 	// DICA: use um array de 5 posições para percorrer os valores enviados pelos parâmetros
 
 	// Retorne o menor número encontrado
-	return 0
+
+	return lowNum
 }

@@ -1,7 +1,7 @@
 /*
 	Exercício 3
 
-	Você deve analisar uma lista de valores inteirios. Identifique se algum dos valores se repete nesta lista:
+	Você deve analisar uma lista de valores inteiros. Identifique se algum dos valores se repete nesta lista:
 	- Se sim retorne verdade
 	- Se falso retorne falso
 

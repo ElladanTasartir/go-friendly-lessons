@@ -17,20 +17,46 @@
 
 package main
 
+import "fmt"
+
 func main() {
 	// Crie suas variáveis abaixo:
 
+	var studentName string
+	var grade1 float64
+	var grade2 float64
+	var grade3 float64
+	var grade4 float64
+
 	// Capture os inputs do usuário abaixo:
 
+	fmt.Println("digite o nome do aluno")
+
+	fmt.Scan(&studentName)
+
+	fmt.Println("digite as notas do aluno")
+
+	fmt.Scan(&grade1)
+	fmt.Scan(&grade2)
+	fmt.Scan(&grade3)
+	fmt.Scan(&grade4)
+
 	// Repasse suas variáveis para a função abaixo:
+
+	result := reviewStudents(studentName, grade1, grade2, grade3, grade4)
+	fmt.Println(result)
 
 	// Printe no terminal o resultado esperado:
 }
 
 func reviewStudents(name string, grade1, grade2, grade3, grade4 float64) string {
-	// Implemente o código responsável por calcular a média do aluno abaixo:
+	media := (grade1 + grade2 + grade3 + grade4) / 4
 
-	// Verifique a média do aluno e retorne a string esperada na descrição do exercício
-
-	return ""
+	if media < 5 {
+		return fmt.Sprintf("%s: REPROVADO", name)
+	} else if media >= 5 && media <= 9 {
+		return fmt.Sprintf("%s: APROVADO", name)
+	} else {
+		return fmt.Sprintf("%s: PARABÉNS", name)
+	}
 }
